@@ -1,15 +1,14 @@
-const textareaEl = document.getElementById("textarea");
-const totalCounterEl = document.getElementById("total-counter");
-const remainingCounterEl = document.getElementById("remaining-counter");
+const textArea = document.getElementById("textarea");
+const totalCounter = document.getElementById("total-counter");
+const remainingCoutner = document.getElementById("remaining-counter");
 
-textareaEl.addEventListener("keyup", () => {
-  updateCounter();
+textArea.addEventListener("keyup", ()=> {
+    updateCounter();
 });
 
 updateCounter()
 
 function updateCounter() {
-  totalCounterEl.innerText = textareaEl.value.length;
-  remainingCounterEl.innerText =
-    textareaEl.getAttribute("maxLength") - textareaEl.value.length;
+    totalCounter.innerText = textArea.value.length;
+    remainingCoutner.innerText = textArea.getAttribute("maxLength") - textArea.value.length;
 }
