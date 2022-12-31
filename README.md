@@ -1,6 +1,4 @@
-# sixteenWebProjects
-
-Welcome to the sixteenWebProjects wiki!
+Welcome to the sixteenWebProjects
 
 Projects:
 
